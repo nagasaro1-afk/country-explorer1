@@ -10,10 +10,13 @@
         <header><h1> Country Explorer</h1><p>Look up countries for travel, study, or research.</p> </header>
         <section class="controls">
          <input id="search" placeholder="Search by country name...">
-         <select id="region"><option value="">All regions</option><option>Africa</option>option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option><option>Antartic</option></select>
-         <select id="sort">option value="name-asc">Name (A-Z)</option><option value="name-desc">Name (Z-A)</option><option value="pop-desc">Population (high-low)</option><option value="pop-asc">Population (low-high)</option></select>
-        </section>
-        <p id="status"></p><button id="retry" hidden>Retry</button><p id="count"></p>
-        <script src="app.js"></script>
-    </body>
+         <select id="region"><option value="">All regions</option><option>Africa</option>option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option><option>Antarctic</option></select>
+         <select id="sort"><option> value="name-asc">Name (A-Z)</option><option value="name-desc">Name (Z-A)</option><option value="pop-desc">Population (high-low)</option><option value="pop-asc">Population (low-high)</option></select>
+         </section>
+         <p id="status"></p><button id="retry" hidden>Retry</button><p id="count"></p>
+         <main id="results"></main>
+         <footer>Data: <a href="https://restcountries.com" target="_blank" rel="noopener">REST Countries API</a></footer>
+        <script src="cache.js"></script>
+         <script src="app.js"></script>
+         </body>
 </html>
